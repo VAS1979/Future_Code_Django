@@ -1,0 +1,193 @@
+/* style.css */
+
+/* Оформление внешнего элемента <html>, который представляет всю HTML-страницу
+и внутреннего элементо <body>, который представляет содержимое HTML-страницы*/
+html, body {
+	font-family: 'Arial';
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	color: #444;
+}
+
+/* Задает макет страницы (размеры) */
+.table-page {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+
+/* Оформление внешнего вида меню */
+.header {
+	background: #3F4137;
+	height: 60px;
+}
+
+/* Оформление и расположение ссылок страниц в меню */
+ul.mainmenu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	color: #fdc073;
+	font-size: 20px;
+	overflow: hidden;
+}
+
+/* Расположение и отступы для ссылок меню*/
+ul.mainmenu li {
+	float: left;
+	margin: 18px 10px 0 20px;
+}
+
+/* Задает расположение последнего пункта в меню */
+ul.mainmenu li.last {float: right;}
+
+/* Цвет ссылок в меню */
+ul.mainmenu li a {
+	color: #fdc073;
+	text-decoration: none;
+}
+
+/* Цвет ссылок в меню при наведении */
+ul.mainmenu li a:hover {
+	color: #FDA83D;
+}
+
+/* Стили h1 */
+h1 {
+	font-size: 32px;
+	color: #040404;
+}
+
+/* Стили h2 */
+h2 {
+	font-size: 22px;
+	color: #650303;
+}
+
+/* Стили h3 */
+h3 {
+	font-size: 22px;
+	color: #13056d;
+}
+
+/* Стили класса content-text */
+.content-text {
+	margin: 20px 0 0 30px;
+	color: #000;
+	font-size: 20px;
+	font-family: Yandex Sans Display Light;
+}
+
+/* Стили h1 вложенных в класс content-text */
+.content-text h1 {font-size: 32px;}
+
+/* Стили для тега <p> */
+p {
+    font-family: Arial, sans-serif;
+	font-style: italic;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Стили оформления подвала страницы сайта */
+#footer {
+	box-sizing: border-box;
+	background: #3F4137;
+	padding: 5px;
+	color: #aaa;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Arial, Helvetica;
+	text-align: left;
+	overflow: hidden;
+}
+
+/* Стили оформления тэга p подвала страницы сайта */
+#footer p {
+	color: #fdc073;
+}
+
+/* Стили оформления основного контейнера */
+#wrapper {
+	width: 95%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#left_container {
+	width: 40%; /* Максимальная ширина контейнера */
+    float: left; /* Расположение контейнера */
+}
+
+#big_left_container {
+	width: 70%; /* Максимальная ширина контейнера */
+    float: left; /* Расположение контейнера */
+}
+
+
+#right_container {
+	margin-left: 41%;
+	width: 59%;
+}
+
+#reg_form {
+	margin-bottom: 10px;
+	border: 2px solid #650303; /* Рамка контейнера */
+	background-color: #d3aa2357;
+	margin: 10px;
+	padding: 15px;
+	border-radius: 2%; /* Радиус скругления */
+}
+
+#text_form {
+	margin: 10px;
+	padding: 10px;
+}
+
+.image {
+	width: 100%; /* Размер картинки в процентах от ширины контейнера */
+    height: auto; /* Автоматическое соотношение сторон */
+}
+
+form {
+    font-family: Arial, sans-serif; /* Шрифт */
+}
+
+label {
+    color: #13056d; /* Цвет надписей */
+    font-weight: bold;  /* Насыщенность шрифта */
+    display: block; /* Размещение надписей на новой строке */
+    margin-bottom: 5px; /* Отступ между надписями */
+}
+
+input {
+    width: 100%; /* Растягивание поля ввода и кнопки по ширине контейнера */
+    padding: 10px; /* Поля ввода и кнопка */
+    margin-bottom: 10px; /* Отступ между полями ввода и кнопкой */
+    box-sizing: border-box; /* Учитывать отступы и рамку внутри ширины и высоты */
+}
+
+button {
+    width: 100%; /* Растягивание поля ввода и кнопки по ширине контейнера */
+    padding: 10px; /* Поля ввода и кнопка */
+    margin-bottom: 10px;/
+    box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #336699;
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.button:hover {
+	background-color: #255580;
+}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+<h3>Заполните форму для связи с нами!</h3>
+<div id="wrapper">
+    <div id="left_container">
+        <div id="reg_form">
+            <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Отправить</button>
+        </form>
+        </div>
+    </div>
+    <div id="right_container">
+        <div id="text_form">
+            <h1>Контактные данные:</h1>
+            <h5>Телефон: +7(999)999-99-99<br/>
+                <br/>Факс: +7(999)999-99-99<br/>
+                <br/>Email: mail@inbox.ru<br/>
+                <br/>Адрес: г.Бобруйск, ул.Неизвестная, д.777
+            </h5>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}
